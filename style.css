@@ -1,0 +1,59 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+form {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.page_body{
+    color:deeppink
+
+}
+.border{
+    padding: 80px 50px;
+    width: 400px;
+    height: 450px;
+    border: 1px solid #236B8E;
+    border-radius: 0px;
+    background-color: #9AC0CD;
+}
+.form-submit-button{
+    background-color: #006a20;
+    color:white;
+    border-style: outset;
+    border-color: #006a20;
+    height: 50px;
+    width:100px;
+    font: bold 15px arial,sans-serif;
+    text-shadow: none;
+
+
+
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="page_body">
+    <div align="center">
+    <div align="center" class="border">
+    <h2>Admin Login</h2>
+    
+    <p style="color:red">{{message}}</p>
+    <form method="POST" action="{{ url_for('adminlogin') }}">
+        <label for="admin_name">admin_name:</label>
+        <input type="text" id="admin_name" name="admin_name" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"  required>
+        <br> 
+        <br>
+        <input type="submit" value="Login">
+    </form>
+    
+    </div>
+</div>
+</div>
+</body>
+</html>

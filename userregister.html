@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="page_body">
+    <div align="center">
+    <div align="center" class="border">
+    <h2>User Registration</h2>
+    <p style="color:red">{{message}}</p>
+    <form method="POST" action="{{ url_for('userregister') }}">
+        <label for="user_id">User_ID:</label>
+        <input type="text" id="user_id" name="user_id" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number." required>
+        <br>
+        
+        <label for="email_id">Email ID:</label>
+        <input type="email" id="email_id" name="email_id" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address" required>
+        <br>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+    <br>
+    <p class="bottom">Already have an account? <a class="bottom" href="{{url_for('userlogin')}}"> Sign In here</a></p>
+    </div>
+</div>
+</div>
+</body>
+</html>
